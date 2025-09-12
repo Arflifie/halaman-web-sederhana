@@ -80,17 +80,15 @@ nav li{
 
 
 /* main */
+
 .konten1{
     height: 70vh;
-    background-image: url(/foto-aset/kota-jambi.jpg);
-}
-
-.konten1 p{
-    margin: 200px 300px 0 200px;
-    font-size: 25px;
+    
 }
 
 .text1{
+    margin: 200px 300px 0 200px;
+    font-size: 25px;
     width: 700px;
     border: 1px;
     padding: 10px;
