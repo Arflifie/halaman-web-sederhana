@@ -11,7 +11,7 @@ body{
 }
 
 .headerutama{
-    padding: 70px;
+    padding: 20px;
     font-size: 20px;
     background: #1b5035;
     text-align: center;
@@ -32,7 +32,6 @@ nav a{
 nav a:hover{
     background-color: #1b5035;
     color: white;
-    border-radius: 10px;
     
 }
 
@@ -43,7 +42,7 @@ nav li{
 }
 
 .dropdown{
-    position: ;
+    position: relative;
 }
 
 .dropdown-menu{
@@ -52,11 +51,11 @@ nav li{
     margin: 0;
     width: 250px;
     display: none;
-    box-shadow: 0 8px 15px;
-    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 8px;
+    border-radius: 5px;
     background-color: #ffffff;
-    text-align: center;
-    
+    top: 170%;
+    left: 0;
 }
 
 .dropdown-menu a{
@@ -78,6 +77,29 @@ nav li{
 .dropdown-menu a:hover{
     background-color: #1b5035;
 }
+
+
+/* main */
+.konten1{
+    height: 70vh;
+    background-image: url(/foto-aset/kota-jambi.jpg);
+}
+
+.konten1 p{
+    margin: 200px 300px 0 200px;
+    font-size: 25px;
+}
+
+.text1{
+    width: 700px;
+    border: 1px;
+    padding: 10px;
+}
+
+
+
+
+/* footer */
 
 footer{
     padding: 20px;
