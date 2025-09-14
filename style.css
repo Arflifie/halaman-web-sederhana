@@ -9,36 +9,43 @@ body {
 }
 
 .headerutama {
-  padding: 20px;
+  padding: 10px 0px;
   font-size: 20px;
-  background-image: linear-gradient(rgb(32, 28, 48), rgb(47, 47, 47));
-  color: white;
-  height: 100vh;
+  background-color: rgb(32, 28, 48);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
 nav {
-  text-align: center;
+  text-align: left;
+  display: flex;
 }
 
 nav ul li a {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 200px;
   text-decoration: none;
   color: white;
-  padding: 10px 50px;
+  padding: 10px 20px;
   border-radius: 20px;
   opacity: 0.5;
   transition: opacity 0.5s ease;
+  align-items: center;
 }
+
 nav ul li a:hover {
   background-color: rgb(240, 240, 241);
   color: rgb(60, 47, 82);
   opacity: 1;
 }
 
-nav li {
-  display: inline;
+nav ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
   list-style: none;
+  margin: 0;
 }
 
 .dropdown {
@@ -54,16 +61,15 @@ nav li {
   box-shadow: 0 3px 8px;
   border-radius: 20px;
   background-color: #ffffff;
-  top: 140%;
+  top: 145%;
   left: 0;
-  opacity: 0.5;
-  transition: 0.5s ease;
 }
 
 .dropdown-menu a {
   display: block;
-  color: black;
+  color: rgb(0, 0, 0);
   padding: 10px 15px;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -77,10 +83,26 @@ nav li {
 }
 
 .dropdown-menu a:hover {
-  background-color: rgb(87, 87, 87);
-  color: white;
+  background-color: rgb(81, 81, 81);
+  color: rgb(255, 255, 255);
   opacity: 1;
 }
+
+/* main */
+
+.homepageutama {
+  background-image: linear-gradient(rgb(32, 28, 48), rgb(47, 47, 47));
+  position: sticky;
+  height: 100vh;
+}
+
+.imghome {
+  position: absolute;
+  right: 0;
+  margin: -880px 0 0 0;
+
+}
+
 .welcome {
   margin: 350px 0 0 250px;
   position: absolute;
@@ -89,6 +111,8 @@ nav li {
 
 .welcome h1 {
   animation: slideIn 1.8s ease forwards;
+  color: white;
+  font-size: 50px;
 }
 @keyframes slideIn {
   from {
@@ -103,6 +127,8 @@ nav li {
 
 .welcome h3 {
   animation: fadeIn 4s ease forwards;
+  color: white;
+  font-size: 30px;
 }
 @keyframes fadeIn {
   from {
@@ -115,18 +141,14 @@ nav li {
   }
 }
 
-.imghome {
-  text-align: right;
-  margin-top: 10px;
-}
-/* main */
-
 .iconsosmed {
   position: absolute;
   z-index: 90;
   border-radius: 0 20px 20px 0;
   left: 0;
   top: 35%;
+  background-color: rgb(69, 57, 92);
+  list-style: none;
   animation: moveright 2s ease forwards;
 }
 
@@ -141,10 +163,14 @@ nav li {
   }
 }
 
+.iconsosmed ul{
+    padding: 10px 15px;
+}
+
 .iconsosmed li {
-  padding: 25px 10px;
   list-style: none;
   text-align: center;
+  padding: 25px 10px;
 }
 
 .iconsosmed i {
@@ -160,6 +186,7 @@ nav li {
   height: 100vh;
   text-align: left;
   padding: 90px 90px;
+  background-image: linear-gradient(rgb(32, 28, 48), rgb(47, 47, 47));
 }
 
 .card1 {
@@ -169,50 +196,52 @@ nav li {
   padding: 20px 30px;
 }
 
-.card1 h2{
-    text-align: center;
-    font-size: 50px;
+.card1 h2 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
 }
 
-.container1{
-    display: flex;
+.container1 {
+  display: flex;
 }
-.card1 p{
-    position: left;
-    padding: 10px px;
-    margin: 0 20px 0 20px;
-    font-size: 25px;
-    text-align: justify;
+.card1 p {
+  position: left;
+  padding: 10px px;
+  margin: 0 20px 0 20px;
+  font-size: 25px;
+  text-align: justify;
+  color: white;
 }
 
 .konten2 {
-   height: 100vh;
+  height: 100vh;
   text-align: left;
   padding: 90px 90px;
 }
 
-.card2{
-    overflow: hidden;
+.card2 {
+  overflow: hidden;
   box-shadow: 0 2px 6px;
   border-radius: 20px;
   padding: 20px 30px;
 }
 
-.card2 h2{
-    text-align: center;
-    font-size: 50px;
+.card2 h2 {
+  text-align: center;
+  font-size: 50px;
 }
 
-.container2{
-    display: flex;
+.container2 {
+  display: flex;
 }
 
-.card2 p{
-    position: left;
-    padding: 10px px;
-    margin: 0 20px 0 20px;
-    font-size: 25px;
-    text-align: justify;
+.card2 p {
+  position: left;
+  padding: 10px px;
+  margin: 0 20px 0 20px;
+  font-size: 25px;
+  text-align: justify;
 }
 
 .konten3 {
@@ -221,28 +250,28 @@ nav li {
   text-align: left;
 }
 
-.card3{
-    overflow: hidden;
+.card3 {
+  overflow: hidden;
   box-shadow: 0 2px 6px;
   border-radius: 20px;
   padding: 20px 30px;
 }
 
-.card3 h2{
-    text-align: center;
-    font-size: 50px;
+.card3 h2 {
+  text-align: center;
+  font-size: 50px;
 }
 
-.container3{
-    display: flex;
+.container3 {
+  display: flex;
 }
 
-.card3 p{
-    position: left;
-    padding: 10px px;
-    margin: 0 20px 0 20px;
-    font-size: 25px;
-    text-align: justify;
+.card3 p {
+  position: left;
+  padding: 10px px;
+  margin: 0 20px 0 20px;
+  font-size: 25px;
+  text-align: justify;
 }
 
 .konten4 {
@@ -251,28 +280,28 @@ nav li {
   text-align: left;
 }
 
-.card4{
-    overflow: hidden;
+.card4 {
+  overflow: hidden;
   box-shadow: 0 2px 6px;
   border-radius: 20px;
   padding: 20px 30px;
 }
 
-.card4 h2{
-    text-align: center;
-    font-size: 50px;
+.card4 h2 {
+  text-align: center;
+  font-size: 50px;
 }
 
-.container4{
-    display: flex;
+.container4 {
+  display: flex;
 }
 
-.card4 p{
-    position: left;
-    padding: 10px px;
-    margin: 0 20px 0 20px;
-    font-size: 25px;
-    text-align: justify;
+.card4 p {
+  position: left;
+  padding: 10px px;
+  margin: 0 20px 0 20px;
+  font-size: 25px;
+  text-align: justify;
 }
 /* footer */
 
