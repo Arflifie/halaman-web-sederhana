@@ -157,9 +157,9 @@ nav li {
 }
 
 .konten1 {
-  height: 70vh;
+  height: 100vh;
   text-align: left;
-  padding: 90px;
+  padding: 90px 90px;
 }
 
 .card1 {
@@ -171,17 +171,24 @@ nav li {
 
 .card1 h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
 }
 
-.card p{
-    position: absolute;
+.container1{
+    display: flex;
+}
+.card1 p{
+    position: left;
+    padding: 10px px;
+    margin: 0 20px 0 20px;
+    font-size: 25px;
+    text-align: justify;
 }
 
 .konten2 {
-  height: 70vh;
-  padding: 90px 90px;
+   height: 100vh;
   text-align: left;
+  padding: 90px 90px;
 }
 
 .card2{
@@ -190,8 +197,26 @@ nav li {
   border-radius: 20px;
   padding: 20px 30px;
 }
+
+.card2 h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.container2{
+    display: flex;
+}
+
+.card2 p{
+    position: left;
+    padding: 10px px;
+    margin: 0 20px 0 20px;
+    font-size: 25px;
+    text-align: justify;
+}
+
 .konten3 {
-  height: 70vh;
+  height: 100vh;
   padding: 90px 90px;
   text-align: left;
 }
@@ -203,8 +228,25 @@ nav li {
   padding: 20px 30px;
 }
 
+.card3 h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.container3{
+    display: flex;
+}
+
+.card3 p{
+    position: left;
+    padding: 10px px;
+    margin: 0 20px 0 20px;
+    font-size: 25px;
+    text-align: justify;
+}
+
 .konten4 {
-  height: 70vh;
+  height: 100vh;
   padding: 90px;
   text-align: left;
 }
@@ -214,6 +256,23 @@ nav li {
   box-shadow: 0 2px 6px;
   border-radius: 20px;
   padding: 20px 30px;
+}
+
+.card4 h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.container4{
+    display: flex;
+}
+
+.card4 p{
+    position: left;
+    padding: 10px px;
+    margin: 0 20px 0 20px;
+    font-size: 25px;
+    text-align: justify;
 }
 /* footer */
 
