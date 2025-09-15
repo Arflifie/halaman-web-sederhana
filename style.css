@@ -108,6 +108,7 @@ nav ul {
   right: 0;
   margin: 60px 0 0 0;
   animation: slideLeft 2s ease forwards;
+  z-index: 0;
 }
 @keyframes slideLeft{
     from{
@@ -123,6 +124,7 @@ nav ul {
   margin: 350px 0 0 250px;
   position: absolute;
   text-align: left;
+  z-index: 5;
 }
 
 .welcome h1 {
@@ -226,6 +228,10 @@ nav ul {
     text-decoration: none;
     top: 75%;
     left: 30%;
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    z-index: 1;
 }
 
 .arrowdown:hover{
@@ -243,9 +249,10 @@ nav ul {
 
 .card1 {
   overflow: hidden;
-  box-shadow: 0 2px 6px;
+  box-shadow: 0 2px 6px white;
   border-radius: 20px;
   padding: 20px 30px;
+  width: 75%;
 }
 
 .card1 h2 {
@@ -278,6 +285,7 @@ nav ul {
   box-shadow: 0 2px 6px;
   border-radius: 20px;
   padding: 20px 30px;
+  width: 75%;
 }
 
 .card2 h2 {
@@ -311,6 +319,7 @@ nav ul {
   box-shadow: 0 2px 6px;
   border-radius: 20px;
   padding: 20px 30px;
+  width: 75%;
 }
 
 .card3 h2 {
@@ -341,9 +350,10 @@ nav ul {
 
 .card4 {
   overflow: hidden;
-  box-shadow: 0 2px 6px;
+  box-shadow: 0 2px 6px white;
   border-radius: 20px;
   padding: 20px 30px;
+  width: 75%;
 }
 
 .card4 h2 {
@@ -364,7 +374,28 @@ nav ul {
   text-align: justify;
   color: white;
 }
+
+.halamanpenuh{
+  display: flex;
+}
 /* footer */
+
+.cardaside{
+  position: absolute;
+  width: 350px;
+  right: 30px;
+  margin: 90px 0 0 0;
+  background-color: transparent;
+  padding: 20px 20px;
+  height: 66vh;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px white;
+}
+
+.cardaside form imput{
+  text-align: center;
+}
 
 footer {
   padding: 20px;
@@ -372,3 +403,4 @@ footer {
   background-color: #1b5035;
   text-align: center;
 }
+
