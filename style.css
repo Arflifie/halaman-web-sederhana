@@ -106,7 +106,7 @@ nav ul {
 .imghome {
   position: absolute;
   right: 0;
-  margin: -880px 0 0 0;
+  margin: 60px 0 0 0;
   animation: slideLeft 2s ease forwards;
 }
 @keyframes slideLeft{
@@ -217,17 +217,21 @@ nav ul {
 }
 
 .arrowdown{
-    position:relative;
-    list-style: none;
+    position: absolute;
     background-color: white;
-    text-align: center;
     padding: 10px 20px;
-    width: 100px;
     border-radius: 20px;
+    transition: transform 0.3s ease;
+    color: rgb(69, 57, 92);
+    text-decoration: none;
+    top: 75%;
+    left: 30%;
 }
 
-.arrowdown a{
-    text-decoration: none;
+.arrowdown:hover{
+  background-color: rgb(227, 166, 45);
+  transform: scale(1.2);
+  color: white;
 }
 
 .konten1 {
