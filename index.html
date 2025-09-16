@@ -24,7 +24,7 @@
     <header class="headerutama">
       <nav>
         <ul>
-          <li><img src="foto-aset/logo.png" alt="logo" width="50px" /></li>
+          <li><img class="logoutama" src="foto-aset/logo.png" alt="logo"/></li>
           <li><a href="#about">About</a></li>
           <li class="dropdown">
             <a href="">Konten</a>
@@ -36,14 +36,7 @@
             </ul>
           </li>
           <li><a href="">Contact</a></li>
-          <li>
-            <img
-              src="foto-aset/pesona-indonesia.png"
-              alt="logo2"
-              width="50px"
-              class="imglogo2"
-            />
-          </li>
+          <li><i class="fa-solid fa-bars" style="color: white; font-size: 200%;"></i></li>
         </ul>
       </nav>
     </header>
@@ -53,18 +46,18 @@
         <div class="welcome">
           <h1>WISATA YANG ADA DI KOTA JAMBI</h1>
           <h3>Tanah Pilih Pesako Betuah</h3>
-          <p>
-            Selamat datang di Jambi, Negeri Tanah Pilih Pusako Betuah, sebuah
-            kota tempat pesona peradaban kuno berpadu harmonis dengan denyut
-            kehidupan modern di tepian Sungai Batanghari yang legendaris.
-          </p>
+            <p>
+              Selamat datang di Jambi, Negeri Tanah Pilih Pusako Betuah, sebuah
+              kota tempat pesona peradaban kuno berpadu harmonis dengan denyut
+              kehidupan modern di tepian Sungai Batanghari yang legendaris.
+            </p>
+          </div>
         </div>
         <a class="arrowdown" href="#tugu-keris"
           ><i class="fa-solid fa-arrow-down"></i>
           <strong>Lets Eksplore</strong></a
         >
-        <div class="imghome">
-          <img src="foto-aset/gentala.png" alt="gentala" width="700px" />
+          <img class="imghome" src="foto-aset/gentala.png" alt="gentala" style="opacity: 50%;"/>
         </div>
       </div>
 
@@ -209,7 +202,7 @@
                     type="text"
                     name="nama_pengirim"
                     required
-                    placeholder="Nama kamu.."
+                    placeholder="Nama kamu"
                     style="
                       width: 300px;
                       height: 40px;
@@ -225,7 +218,7 @@
                     type="email"
                     name="email_pengirim"
                     required
-                    placeholder="Email kamu.."
+                    placeholder="Email kamu"
                     style="
                       width: 300px;
                       height: 40px;
@@ -238,17 +231,98 @@
                 <div>
                   <label for="pesan">Pesan</label><br />
                   <textarea
+                    placeholder="Email"
                     name="pesan_email"
                     id="pesan"
                     rows="6"
                     required
-                    style="width: 300px; border-radius: 20px; padding: 2px 15px"
+                    style="
+                      width: 300px;
+                      border-radius: 20px;
+                      padding: 10px 15px;
+                    "
                   ></textarea>
                 </div>
 
                 <br /><button
                   type="submit"
-                  style="padding: 10px 20px; width: 200px"
+                  style="
+                    padding: 10px 20px;
+                    width: 200px;
+                    border-radius: 20px;
+                    gap: 15px;
+                  "
+                >
+                  <i class="fa-solid fa-paper-plane"></i>Kirim
+                </button>
+              </form>
+            </div>
+          </article>
+
+          <article>
+            <div class="cardaside2">
+              <figure>
+                <img src="" alt="foto Kota Jambi" width="700px" />
+                <figcaption>Foto Jambi</figcaption>
+              </figure>
+
+              <form action="">
+                <div>
+                  <label for="nama" style="color: white">Nama</label><br />
+                  <input
+                    type="text"
+                    name="nama_pengirim"
+                    required
+                    placeholder="Nama kamu"
+                    style="
+                      width: 300px;
+                      height: 40px;
+                      border-radius: 20px;
+                      padding: 2px 15px;
+                    "
+                  />
+                </div>
+                <br />
+                <div>
+                  <label for="email">Email</label><br />
+                  <input
+                    type="email"
+                    name="email_pengirim"
+                    required
+                    placeholder="Email kamu"
+                    style="
+                      width: 300px;
+                      height: 40px;
+                      border-radius: 20px;
+                      padding: 2px 15px;
+                    "
+                  />
+                </div>
+                <br />
+                <div>
+                  <label for="pesan">Pesan</label><br />
+                  <textarea
+                    placeholder="Email"
+                    name="pesan_email"
+                    id="pesan"
+                    rows="6"
+                    required
+                    style="
+                      width: 300px;
+                      border-radius: 20px;
+                      padding: 10px 15px;
+                    "
+                  ></textarea>
+                </div>
+
+                <br /><button
+                  type="submit"
+                  style="
+                    padding: 10px 20px;
+                    width: 200px;
+                    border-radius: 20px;
+                    gap: 15px;
+                  "
                 >
                   <i class="fa-solid fa-paper-plane"></i>Kirim
                 </button>
@@ -259,7 +333,6 @@
       </div>
     </main>
 
-    <br />
     <footer>&copy; 2025, Arfun Ali Yafie</footer>
   </body>
 </html>
