@@ -43,7 +43,7 @@ nav ul {
   gap: 5rem;
   align-items: center;
   list-style: none;
-  margin: 0;
+  margin: 0 0 0 5%;
 }
 
 .dropdown {
@@ -87,7 +87,10 @@ nav ul {
 }
 
 .logoutama {
-  width: 100px;
+  width: 3.5rem;
+  position: absolute;
+  align-items: center;
+  padding: 0 2%;
 }
 
 /* main */
@@ -439,15 +442,16 @@ footer {
   }
 
   .menu-bar {
-    margin: 0 0 0 0;
-    text-align: right;
-    margin-right: 5%;
     display: block;
-    align-items: center;
+    right: 0;
+    position: absolute;
+    margin: 0 5cqb 0 0;
   }
 
   .logoutama {
     align-items: center;
+    width: 8%;
+    
 
  ;
   }
@@ -457,8 +461,8 @@ footer {
   }
 
   .imghome {
-    width: 80%;
-    top: 40%;
+    width: 25rem;
+    top: 30%;
     position: absolute;
   }
 
